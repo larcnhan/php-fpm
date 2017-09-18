@@ -197,6 +197,7 @@ RUN set -ex \
         && cp -R $PHP_INI_ETC_DIR /install
 
 COPY startup.sh /usr/bin/startup.sh
+COPY php.ini-development /usr/local/etc/php/php.ini
 
 EXPOSE 9000
 
